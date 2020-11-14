@@ -1,0 +1,3 @@
+IDEL:/shellcode.bin
+IADD:00000001:/shellcode.bin
+IDSET:/shellcode.bin:a9fef5899cb1405175285441600
