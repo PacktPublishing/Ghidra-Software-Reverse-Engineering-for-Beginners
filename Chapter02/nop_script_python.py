@@ -7,4 +7,8 @@
 
 currentAddr = currentLocation.getByteAddress()
 nop = 0x90
-setByte(currentAddr, nop)
+instructionSize = getInstructionAt(currentAddr).getDefaultFallThroughOffset()
+removeInstructionAt(currentAddr)
+for i in range(instructionSize):
+    setByte(currentAddr.addWrap(i), nop)
+disassemble(currentAddr)

@@ -20,14 +20,19 @@ import ghidra.program.model.address.*;
 public class NopScript extends GhidraScript {
 
     public void run() throws Exception {
-		Address startAddr = currentLocation.getByteAddress();
-		byte nop = (byte)0x90;
-		try {
-			setByte(startAddr, nop);
-		}
-		catch (MemoryAccessException e) {
-			popup("Unable to nop this byte");
-			return;
-		}
+        Address startAddr = currentLocation.getByteAddress();
+        byte nop = (byte)0x90; 
+        try {
+            int istructionSize = getInstructionAt​(startAddr).getDefaultFallThroughOffset();
+            removeInstructionAt​(startAddr);
+            for(int i=0; i<istructionSize; i++){
+                setByte(startAddr.addWrap​(i), nop);
+            }
+            disassemble​(startAddr);
+        }
+        catch (MemoryAccessException e) {
+            popup("Unable to nop this byte");
+            return;
+        }
     }
 }
