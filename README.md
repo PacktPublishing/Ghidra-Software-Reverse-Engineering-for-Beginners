@@ -2,9 +2,9 @@
 Software Reverse Engineering with Ghidra, published by Packt
 
 # Code for chapters:
-[Chapter01](Chapter01) - Getting started with Ghidra  
+~~Chapter01 - Getting started with Ghidra~~  
 [Chapter02](Chapter02) - Automating RE tasks with Ghidra scripts  
-[Chapter03](Chapter03) - Ghidra debug mode  
+~~Chapter03 - Ghidra debug mode~~  
 [Chapter04](Chapter04) - Using Ghidra Extensions  
 [Chapter05](Chapter05) - Reversing Malware Using Ghidra  
 [Chapter06](Chapter06) - Scripting Malware Analysis  
