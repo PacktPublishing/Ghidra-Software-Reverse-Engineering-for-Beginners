@@ -16,3 +16,7 @@ Software Reverse Engineering with Ghidra, published by Packt
 [Chapter12](Chapter12) - Analyzing Processor Modules  
 [Chapter13](Chapter13) - Contributing to Ghidra Community  
 [Chapter14](Chapter14) - Extending Ghidra for advanced reverse engineering  
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800207974">https://packt.link/free-ebook/9781800207974 </a> </p>
